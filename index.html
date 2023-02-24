@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cronometro</title>
+
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/buttons.css">
+</head>
+<body>
+   <div class="container">
+      <div class="crono">
+         <h1>temporizador</h1>
+
+         <table>
+            <tbody>
+               <tr>
+                  <td>HR</td>
+                  <td>MT</td>
+                  <td>SD</td>
+               </tr>
+               <tr>
+                  <td><span id='hr' class="view">00</span> :</td>
+                  <td><span id='mt' class="view">00</span> :</td>
+                  <td><span id='sg' class="view">00</span></td>
+                  <!-- <td><input type="button" value="00" id="hr" class="view"> :</td>
+                  <td><input type="button" value="00" id="mt" class="view"> :</td>
+                  <td><input type="button" value="00" id="sg" class="view"></td> -->
+               </tr>
+               <tr>
+                  <td colspan="3">
+                     <input type="button" class="btn btn-primary" id="start" value="Start">
+                     <input type="button" class="btn btn-delete" id="stop" value="Stop">
+                     <input type="button" class="btn btn-secondary" id="reset" value="Reset">
+                  </td>
+               </tr>
+            </tbody>
+            
+         </table>
+      </div>
+
+      <div class="form">
+         <h1>Formulario</h1>
+
+         <table>
+            <tbody>
+               <tr>
+                  <td>HR</td>
+                  <td>MT</td>
+                  <td>SD</td>
+               </tr>
+               <tr>
+                  <td><input type="number" value="00" id="hrInput" class="form" tabindex="1"></td>
+                  <td><input type="number" value="00" id="mtInput" class="form" tabindex="2"></td>
+                  <td><input type="number" value="00" id="sgInput" class="form" tabindex="3"></td>
+               </tr>
+               <tr>
+                  <td colspan="3"><input type="button" class="btn btn-primary" id="enviar" value="Enviar"></td>
+               </tr>
+            </tbody>
+            
+         </table>
+      </div>
+
+      <div class="localStorage">
+         <h1>HISTORIAL</h1>
+
+         <div class="historial">
+            <table id="table">
+               <thead>
+                  <tr>
+                     <td>ID</td>
+                     <td>HR</td>
+                     <td>MT</td>
+                     <td>SG</td>
+                     <td>AC</td>
+                  </tr>
+               </thead>
+            </table>
+         </div>
+      </div>
+   </div>
+
+   <audio id="audio" src="audio/camion.mp3"></audio>
+
+   <script src="js/temporizador.js"></script>
+   <script src="js/form.js"></script>
+   <script src="js/historialStorage.js"></script>
+</body>
+</html>

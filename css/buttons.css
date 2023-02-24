@@ -1,0 +1,43 @@
+.btn {
+   margin: 10px 5px;
+   padding: 5px 10px;
+   text-decoration: none;
+   font-size: 18px;
+   border: 1px solid black;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all ease .5s;
+}
+.btn-info {
+   border: 1px solid #0dcaf0;
+   color: #0dcaf0;
+}
+.btn-info:hover {
+   background-color: #0dcaf0;
+   color: #000;
+}
+.btn-delete {
+   background-color: red;
+   border: 0;
+   color: white;
+}
+.btn-delete:hover {
+   background-color: white;
+   color: red;
+}
+.btn-primary {
+   background-color: #0d6efd;
+   color: #fff;
+   border: 0;
+}
+.btn-primary:hover {
+   background-color: #fff;
+   color: #0d6efd;
+}
+.btn-secondary {
+   background-color: #666f77;
+   color: #fff;
+}
+.btn-secondary:hover {
+   background-color: #474d52;
+}
