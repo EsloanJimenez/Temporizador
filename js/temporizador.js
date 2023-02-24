@@ -84,19 +84,19 @@ btnReset.addEventListener('click', () => {
 
    // localStorage.clear();
 
-   
+   addTableRow();
 });
 
 const startInit = () => {
-   if(sg.textContent == 0) {
+   if(sg.textContent <= 0) {
       sg.textContent = 60;
       mt.textContent--;
 
-      if(mt.textContent == -1) {
+      if(mt.textContent <= -1) {
          mt.textContent = 59;
          hr.textContent--;
 
-         if(hr.textContent == -1) {
+         if(hr.textContent <= -1) {
             hr.textContent = '0' + 0;
             mt.textContent = '0' + 0;
             sg.textContent = '0' + 0;
@@ -117,5 +117,6 @@ const startInit = () => {
          } 
       }
    }
+
    sg.textContent--;
 }
